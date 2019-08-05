@@ -1,0 +1,121 @@
+.contaner{
+    width: 100%;
+    height: 100vh;
+    background-color: #D9EAEF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial;
+    color: #ccc;
+}
+.album{
+    width: 750px;
+    height: 350px;
+    background-color: #2D333C;
+    display: flex;
+    box-shadow: 25px 25px 20px 0px rgba(59, 59, 59, 0.2),
+                10px 10px 20px 0px rgba(29, 29, 29, 0.3);
+}
+.albumCover{
+    width: 280px;
+    height: 280px;
+    margin-top: -30px;
+    margin-left: -30px;
+    box-shadow:5px 5px 25px 15px rgba(0,0,0,0.2);
+}
+.songinfo{
+    width: 500px;
+    margin:50px 30px;
+    text-align: center;
+    
+}
+.songName{
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-family: 'Lato';
+    color:#C8C7CC;
+}
+.singer{
+    font-size: 20px;
+    font-family: 'Nunito Sans';
+    font-weight: bold;
+    margin-bottom: 50px;
+    color: #5B616D;
+}
+.player{
+    font-size: 0px;
+}
+
+.time{
+    font-size: 12px;
+    font-family: 'Lato';
+    display: inline-block;
+    vertical-align: top;
+}
+
+#nowTime{
+   color: #5B616D;
+}
+#songTime{
+    color: #fff;
+}
+.btn{
+    width: 40px;
+    height: 40px;
+    margin: 50px 20px;
+
+    display: inline-block;
+}
+.btn:hover{
+    cursor: pointer;
+}
+#playButton{
+    background-image: url(../img/icon/play.svg);
+}
+#previews{
+    background-image: url(../img/icon/preview.svg);
+}
+#next{
+    background-image: url(../img/icon/next.svg);
+}
+#defaultBar{
+    border-radius: 2px;
+    background-color: #ccc;
+    width: 350px;
+    margin: 5px;
+    height: 3px;
+    display: inline-block;
+    /* float: left; */
+    cursor: pointer;
+}
+#progressBar{
+    width: 0px;
+    height: 3px;
+    border-radius:2px ;
+    background-color: #00ACB6;
+    cursor: pointer;
+}
+#defaultVoice{
+    width: 80px;
+    height: 3px;
+    background-color: #ccc;
+    position: relative;
+}
+#voiceBar{
+    width: 50px;
+    height: 3px;
+    background-color: #666;
+    position: absolute;
+    
+}
+#voiceCicle{
+    border: 1px solid #ccc;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: #fff;
+    position: absolute;
+    top: -5px;
+    left: 45px;
+
+}
