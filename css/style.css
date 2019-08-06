@@ -21,12 +21,13 @@
     height: 280px;
     margin-top: -30px;
     margin-left: -30px;
-    box-shadow:5px 5px 25px 15px rgba(0,0,0,0.2);
+    box-shadow:5px 5px 25px 15px rgba(39, 39, 39, 0.1);
 }
 .songinfo{
     width: 500px;
     margin:50px 30px;
     text-align: center;
+    vertical-align: middle;
     
 }
 .songName{
@@ -45,14 +46,12 @@
 .player{
     font-size: 0px;
 }
-
 .time{
     font-size: 12px;
     font-family: 'Lato';
     display: inline-block;
     vertical-align: top;
 }
-
 #nowTime{
    color: #5B616D;
 }
@@ -63,7 +62,6 @@
     width: 40px;
     height: 40px;
     margin: 50px 20px;
-
     display: inline-block;
 }
 .btn:hover{
@@ -75,8 +73,20 @@
 #previews{
     background-image: url(../img/icon/preview.svg);
 }
+#previews:hover{
+    background-image: url(../img/icon/hover-preview.svg);
+}
 #next{
     background-image: url(../img/icon/next.svg);
+}
+#next:hover{
+    background-image: url(../img/icon/hover-next.svg);
+}
+#songloop{
+    background-image: url(../img/icon/radom.svg);
+}
+#songchange{
+    background-image: url(../img/icon/s.svg);
 }
 #defaultBar{
     border-radius: 2px;
@@ -85,7 +95,6 @@
     margin: 5px;
     height: 3px;
     display: inline-block;
-    /* float: left; */
     cursor: pointer;
 }
 #progressBar{
@@ -95,27 +104,35 @@
     background-color: #00ACB6;
     cursor: pointer;
 }
+.voiceinfo{
+    height: 30px;
+    line-height: 20px;
+}
+.volume{
+    display: inline-block;
+   
+}
 #defaultVoice{
-    width: 80px;
-    height: 3px;
+    display: inline-block;
+    margin: 10px;
+    width: 100px;
+    height: 5px;
     background-color: #ccc;
-    position: relative;
+    cursor: pointer;
 }
 #voiceBar{
     width: 50px;
-    height: 3px;
-    background-color: #666;
-    position: absolute;
-    
+    height: 5px;
+    background-color: #00ACB6;
+    cursor: pointer;
 }
-#voiceCicle{
-    border: 1px solid #ccc;
-    width: 10px;
-    height: 10px;
-    border-radius: 10px;
-    background-color: #fff;
-    position: absolute;
-    top: -5px;
-    left: 45px;
+.volume{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/icon/volume.svg);
+    background-repeat: no-repeat;
+    margin-right: 5px;
+
 
 }
