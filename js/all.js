@@ -1,4 +1,5 @@
 function doFirst() {
+    
     // const $ = document.querySelector.bind(document);
     let playbtn = document.getElementById('playButton');
     let songloop = document.getElementById('songloop');
